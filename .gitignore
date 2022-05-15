@@ -1,7 +1,8 @@
 HELP.md
 mvnw
 mvnw.cmd
-mvn/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
 
 .DS_Store
 *.impl
