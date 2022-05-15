@@ -16,7 +16,7 @@ public class SocialTextConfig {
     private Info apiInfo() {
         return new Info().title("Social Text REST API Backend Service")
                 .version("1.0")
-                .description("It handles and manages the process of the boox backend facilitation")
+                .description("It handles and manages the process of the social and messaging platform integration")
                 .termsOfService(null)
                 .license(null);
     }
