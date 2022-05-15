@@ -16,6 +16,7 @@
 	<description>Spring Boot Book API for swift integration(s)</description>
 	<properties>
 		<java.version>11</java.version>
+		<log4j2.version>2.17.0</log4j2.version>
 		<commons-validator-version>1.7</commons-validator-version>
 		<spring-auto-restdocs.version>2.0.11</spring-auto-restdocs.version>
 	</properties>
