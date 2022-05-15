@@ -16,6 +16,8 @@
 	<description>Spring Boot Book API for swift integration(s)</description>
 	<properties>
 		<java.version>11</java.version>
+		<commons-validator-version>1.7</commons-validator-version>
+		<spring-auto-restdocs.version>2.0.11</spring-auto-restdocs.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -33,6 +35,32 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+			<version>${commons-validator-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.12</version>
 		</dependency>
 
 		<dependency>
@@ -76,9 +104,11 @@
 			<artifactId>spring-restdocs-mockmvc</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
+		<finalName>BOOXBackWeb</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.asciidoctor</groupId>
