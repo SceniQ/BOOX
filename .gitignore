@@ -1,7 +1,7 @@
 HELP.md
 mvnw
 mvnw.cmd
-.mvn/
+mvn/
 
 .DS_Store
 *.impl
