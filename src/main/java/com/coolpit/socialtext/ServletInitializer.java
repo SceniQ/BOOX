@@ -1,4 +1,4 @@
-package com.coolpit.boox;
+package com.coolpit.socialtext;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(BooxApplication.class);
+		return application.sources(SocialTextApplication.class);
 	}
 
 }

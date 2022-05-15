@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.coolpit</groupId>
-	<artifactId>boox</artifactId>
+	<artifactId>socialtext</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>boox</name>
-	<description>Spring Boot Book API for swift integration(s)</description>
+	<name>socialtext</name>
+	<description>Spring Boot API for swift integration(s) between Social media and messaging platorm</description>
 	<properties>
 		<java.version>11</java.version>
 		<log4j2.version>2.17.0</log4j2.version>
@@ -109,7 +109,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>BOOXBackWeb</finalName>
+		<finalName>SocialTextWeb</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.asciidoctor</groupId>
