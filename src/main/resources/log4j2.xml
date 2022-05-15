@@ -2,7 +2,7 @@
 <Configuration status="WARN" monitorInterval="30">
     <Properties>
         <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%-6p] %C{1}.%M(%F:%L) – %m%n</Property>
-        <Property name="APP_LOG_ROOT">/logs/boox_dev</Property>
+        <Property name="APP_LOG_ROOT">/logs/socialtext_dev</Property>
     </Properties>
 
     <Appenders>
@@ -11,9 +11,9 @@
         </Console>
 
         <RollingFile
-                name="booxerror"
-                fileName="${APP_LOG_ROOT}/BOOX_ADOPTER_error.log"
-                filePattern="${APP_LOG_ROOT}/BOOX_ADOPTER_error_%d{MM-dd-yyyy}-%i.log"
+                name="socialtext_error"
+                fileName="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_error.log"
+                filePattern="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_error_%d{MM-dd-yyyy}-%i.log"
                 ignoreExceptions="false">
             <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout>
@@ -26,9 +26,9 @@
         </RollingFile>
 
         <RollingFile
-                name="booxinfo"
-                fileName="${APP_LOG_ROOT}/BOOX_ADOPTER_info.log"
-                filePattern="${APP_LOG_ROOT}/BOOX_ADOPTER_info_%d{MM-dd-yyyy}-%i.log"
+                name="socialtext_info"
+                fileName="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_info.log"
+                filePattern="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_info_%d{MM-dd-yyyy}-%i.log"
                 ignoreExceptions="false">
             <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${LOG_PATTERN}"/>
@@ -39,9 +39,9 @@
         </RollingFile>
 
         <RollingFile
-                name="booxdebug"
-                fileName="${APP_LOG_ROOT}/BOOX_ADOPTER_debug.log"
-                filePattern="${APP_LOG_ROOT}/BOOX_ADOPTER_debug_%d{MM-dd-yyyy}-%i.log"
+                name="socialtext_debug"
+                fileName="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_debug.log"
+                filePattern="${APP_LOG_ROOT}/SOCIAL_TEXT_ADOPTER_debug_%d{MM-dd-yyyy}-%i.log"
                 ignoreExceptions="false">
             <LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${LOG_PATTERN}"/>
@@ -54,13 +54,13 @@
     </Appenders>
     <Loggers>
 
-        <Logger name="com.coolpit.boox" additivity="false">
-            <AppenderRef ref="booxerror"/>
-            <AppenderRef ref="booxinfo"/>
+        <Logger name="com.coolpit.socialtext" additivity="false">
+            <AppenderRef ref="socialtext_error"/>
+            <AppenderRef ref="socialtext_info"/>
         </Logger>
 
         <Root level="trace">
-            <AppenderRef ref="booxdebug"/>
+            <AppenderRef ref="socialtext_debug"/>
         </Root>
     </Loggers>
 </Configuration>

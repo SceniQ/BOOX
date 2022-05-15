@@ -1,10 +1,10 @@
-package com.coolpit.boox;
+package com.coolpit.socialtext;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BooxApplicationTests {
+class SocialTextApplicationTests {
 
 	@Test
 	void contextLoads() {
