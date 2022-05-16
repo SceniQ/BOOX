@@ -15,6 +15,6 @@ public class AdminResource {
 
     @GetMapping(value = "welcome")
     public ResponseEntity<?> greet(){
-        return ResponseEntity.ok("Welcome To BOOX!");
+        return ResponseEntity.ok("Welcome To Social Text!");
     }
 }
